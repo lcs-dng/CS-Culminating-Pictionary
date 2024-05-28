@@ -1,18 +1,27 @@
+////
+////  LandingView.swift
+////  CS Culminating-Pictionary
+////
+////  Created by Dexter Ng on 2024-05-28.
+////
 //
-//  LandingView.swift
-//  CS Culminating-Pictionary
+//import SwiftUI
 //
-//  Created by Dexter Ng on 2024-05-28.
+//struct LandingView: View {
+//    var body: some View {
+//        
+//        HStack {
+//            Text("Guess the Abstracts :)")
+//            
+////            Picker("Themes", selection: <#T##Binding<SelectionValue>#>) {
+//                Text("General").tag("General")
+//            }
+//            .pickerStyle(.wheel)
+//        }
+//        
+//    }
+//}
 //
-
-import SwiftUI
-
-struct LandingView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    LandingView()
-}
+//#Preview {
+//    LandingView()
+//}
