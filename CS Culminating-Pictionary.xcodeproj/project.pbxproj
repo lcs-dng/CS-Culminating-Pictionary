@@ -11,7 +11,7 @@
 		47FECF0F2C06092C00F000E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FECF0E2C06092C00F000E9 /* Assets.xcassets */; };
 		47FECF122C06092C00F000E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FECF112C06092C00F000E9 /* Preview Assets.xcassets */; };
 		47FECF1B2C060AB700F000E9 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FECF1A2C060AB700F000E9 /* LandingView.swift */; };
-		47FECF1D2C06153D00F000E9 /* PickerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FECF1C2C06153D00F000E9 /* PickerTest.swift */; };
+		47FECF1D2C06153D00F000E9 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FECF1C2C06153D00F000E9 /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		47FECF0E2C06092C00F000E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47FECF112C06092C00F000E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47FECF1A2C060AB700F000E9 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
-		47FECF1C2C06153D00F000E9 /* PickerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTest.swift; sourceTree = "<group>"; };
+		47FECF1C2C06153D00F000E9 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				47FECF1A2C060AB700F000E9 /* LandingView.swift */,
-				47FECF1C2C06153D00F000E9 /* PickerTest.swift */,
+				47FECF1C2C06153D00F000E9 /* PickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47FECF1D2C06153D00F000E9 /* PickerTest.swift in Sources */,
+				47FECF1D2C06153D00F000E9 /* PickerView.swift in Sources */,
 				47FECF1B2C060AB700F000E9 /* LandingView.swift in Sources */,
 				47FECF0B2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift in Sources */,
 			);
