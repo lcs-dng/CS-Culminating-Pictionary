@@ -11,7 +11,7 @@ import SwiftUI
 struct CS_Culminating_PictionaryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
     }
 }

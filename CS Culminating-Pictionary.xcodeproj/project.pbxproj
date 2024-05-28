@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		47FECF0B2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FECF0A2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift */; };
-		47FECF0D2C06092900F000E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FECF0C2C06092900F000E9 /* ContentView.swift */; };
 		47FECF0F2C06092C00F000E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FECF0E2C06092C00F000E9 /* Assets.xcassets */; };
 		47FECF122C06092C00F000E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FECF112C06092C00F000E9 /* Preview Assets.xcassets */; };
+		47FECF1B2C060AB700F000E9 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FECF1A2C060AB700F000E9 /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47FECF072C06092900F000E9 /* CS Culminating-Pictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS Culminating-Pictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FECF0A2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS_Culminating_PictionaryApp.swift; sourceTree = "<group>"; };
-		47FECF0C2C06092900F000E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47FECF0E2C06092C00F000E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47FECF112C06092C00F000E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47FECF1A2C060AB700F000E9 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				47FECF0A2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift */,
-				47FECF0C2C06092900F000E9 /* ContentView.swift */,
+				47FECF182C0609F200F000E9 /* Model */,
+				47FECF192C060A0300F000E9 /* Views */,
 				47FECF0E2C06092C00F000E9 /* Assets.xcassets */,
 				47FECF102C06092C00F000E9 /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				47FECF112C06092C00F000E9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47FECF182C0609F200F000E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47FECF192C060A0300F000E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47FECF1A2C060AB700F000E9 /* LandingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47FECF0D2C06092900F000E9 /* ContentView.swift in Sources */,
+				47FECF1B2C060AB700F000E9 /* LandingView.swift in Sources */,
 				47FECF0B2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
