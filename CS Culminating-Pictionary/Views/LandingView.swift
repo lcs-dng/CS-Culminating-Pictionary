@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct LandingView: View {
+    
+    // MARK: Stored propeties
+    @State var viewModel = GameViewModel()
+    
+    // MARK: Computed properties
     var body: some View {
         
         VStack {
@@ -20,9 +25,11 @@ struct LandingView: View {
             
             PickerView()
             
-            StepperView(displayText: "No. of Rounds:")
+            Stepper("No. of rounds", value: $viewModel.rounds)
             
-            StepperView(displayText: "Time Limit:")
+            Text("rounds: \(viewModel.rounds)")
+            
+            NavigationLink("Start", destination: PickerView())
         }
         
     }
