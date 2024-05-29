@@ -12,8 +12,17 @@ struct LandingView: View {
         
         VStack {
             Text("Guess the Abstracts :)")
+                .font(
+                    .system(size: 30)
+                    .bold()
+                    .italic()
+                )
             
             PickerView()
+            
+            StepperView(displayText: "No. of Rounds:")
+            
+            StepperView(displayText: "Time Limit:")
         }
         
     }
