@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471C2FDD2C08DAB400FAAFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471C2FDC2C08DAB400FAAFDF /* ContentView.swift */; };
 		47AE5EB92C077732001A6CD0 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE5EB82C077732001A6CD0 /* GameViewModel.swift */; };
 		47FECF0B2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FECF0A2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift */; };
 		47FECF0F2C06092C00F000E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FECF0E2C06092C00F000E9 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471C2FDC2C08DAB400FAAFDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47AE5EB82C077732001A6CD0 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		47FECF072C06092900F000E9 /* CS Culminating-Pictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS Culminating-Pictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FECF0A2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS_Culminating_PictionaryApp.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				47FECF1A2C060AB700F000E9 /* LandingView.swift */,
+				471C2FDC2C08DAB400FAAFDF /* ContentView.swift */,
 				47FECF1C2C06153D00F000E9 /* PickerView.swift */,
 			);
 			path = Views;
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47FECF1D2C06153D00F000E9 /* PickerView.swift in Sources */,
+				471C2FDD2C08DAB400FAAFDF /* ContentView.swift in Sources */,
 				47FECF1B2C060AB700F000E9 /* LandingView.swift in Sources */,
 				47AE5EB92C077732001A6CD0 /* GameViewModel.swift in Sources */,
 				47FECF0B2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift in Sources */,

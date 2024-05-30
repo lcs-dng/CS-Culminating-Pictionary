@@ -15,45 +15,47 @@ struct LandingView: View {
     // MARK: Computed properties
     var body: some View {
         
-        VStack {
-            Text("Guess the Abstracts :)")
-                .font(
-                    .system(size: 30)
-                    .bold()
-                    .italic()
-                )
-            
+        NavigationStack {
+            VStack {
+                Text("Guess the Abstracts :)")
+                    .font(
+                        .system(size: 30)
+                        .bold()
+                        .italic()
+                    )
+                
                 ZStack{
                     Text("Themes:")
                         .padding(.leading, -180)
                     
                     PickerView()
                 }
-            
-            Stepper(value: $viewModel.rounds, in: 1...5, step: 2) {
                 
-                Text("rounds: \(viewModel.rounds)")
+                Stepper(value: $viewModel.rounds, in: 1...5, step: 2) {
+                    
+                    Text("rounds: \(viewModel.rounds)")
+                    
+                }
+                .padding()
                 
-            }
-            .padding()
-            
-            Stepper(value: $viewModel.time, in: 10...50, step: 5) {
+                Stepper(value: $viewModel.time, in: 10...50, step: 5) {
+                    
+                    Text("time limit: \(viewModel.time) seconds")
+                    
+                }
+                .padding()
                 
-                Text("time limit: \(viewModel.time) seconds")
-                
-            }
-            .padding()
-            
-            NavigationLink {
-                PickerView()
-            } label: {
-                Label("Start", systemImage: "play.circle.fill")
-                    .font(
-                        .system(size: 25)
-                        .bold()
-                    )
-                    .foregroundColor(.green)
-                    .padding(.top, 100)
+                NavigationLink {
+                    ContentView()
+                } label: {
+                    Label("Start", systemImage: "play.circle.fill")
+                        .font(
+                            .system(size: 25)
+                            .bold()
+                        )
+                        .foregroundColor(.green)
+                        .padding(.top, 100)
+                }
             }
         }
         
