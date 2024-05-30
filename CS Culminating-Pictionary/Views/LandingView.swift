@@ -23,12 +23,17 @@ struct LandingView: View {
                     .italic()
                 )
             
-            PickerView()
+                ZStack{
+                    Text("Themes:")
+                        .padding(.leading, -180)
+                    
+                    PickerView()
+                }
             
             Stepper(value: $viewModel.rounds, in: 1...5, step: 2) {
                 
                 Text("rounds: \(viewModel.rounds)")
-
+                
             }
             .padding()
             
@@ -39,7 +44,17 @@ struct LandingView: View {
             }
             .padding()
             
-            NavigationLink("Start", destination: PickerView())
+            NavigationLink {
+                PickerView()
+            } label: {
+                Label("Start", systemImage: "play.circle.fill")
+                    .font(
+                        .system(size: 25)
+                        .bold()
+                    )
+                    .foregroundColor(.green)
+                    .padding(.top, 100)
+            }
         }
         
     }
