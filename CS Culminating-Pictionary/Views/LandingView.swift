@@ -25,9 +25,19 @@ struct LandingView: View {
             
             PickerView()
             
-            Stepper("No. of rounds", value: $viewModel.rounds)
+            Stepper(value: $viewModel.rounds) {
+                
+                Text("rounds: \(viewModel.rounds)")
+
+            }
+            .padding()
             
-            Text("rounds: \(viewModel.rounds)")
+            Stepper(value: $viewModel.time) {
+                
+                Text("time limit: \(viewModel.time)")
+                
+            }
+            .padding()
             
             NavigationLink("Start", destination: PickerView())
         }

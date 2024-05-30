@@ -65,8 +65,8 @@
 			children = (
 				47FECF0A2C06092900F000E9 /* CS_Culminating_PictionaryApp.swift */,
 				47FECF182C0609F200F000E9 /* Model */,
-				47AE5EB72C07770B001A6CD0 /* ViewModel */,
 				47FECF192C060A0300F000E9 /* Views */,
+				47AE5EB72C07770B001A6CD0 /* ViewModel */,
 				47FECF0E2C06092C00F000E9 /* Assets.xcassets */,
 				47FECF102C06092C00F000E9 /* Preview Content */,
 			);
