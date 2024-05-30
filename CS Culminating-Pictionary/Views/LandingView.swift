@@ -25,16 +25,16 @@ struct LandingView: View {
             
             PickerView()
             
-            Stepper(value: $viewModel.rounds) {
+            Stepper(value: $viewModel.rounds, in: 1...5, step: 2) {
                 
                 Text("rounds: \(viewModel.rounds)")
 
             }
             .padding()
             
-            Stepper(value: $viewModel.time) {
+            Stepper(value: $viewModel.time, in: 10...50, step: 5) {
                 
-                Text("time limit: \(viewModel.time)")
+                Text("time limit: \(viewModel.time) seconds")
                 
             }
             .padding()
