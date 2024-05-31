@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Stored properties
+    @State var enteredAnswer = ""
+    
+    // MARK: Computed properties
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Guess the Picture!")
+                .font(
+                    .system(size: 30)
+                    .bold()
+                    .italic()
+                )
+            
+            Spacer()
+            
+            TextField("Enter your answer", text: $enteredAnswer)
+                .padding()
+        }
     }
 }
 
