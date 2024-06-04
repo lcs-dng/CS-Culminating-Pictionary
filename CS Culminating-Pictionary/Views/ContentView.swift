@@ -24,6 +24,20 @@ struct ContentView: View {
             
             Spacer()
             
+            Image("abstractDragon")
+                .resizable()
+                .scaledToFit()
+                .border(.black)
+                .padding()
+            
+            if enteredAnswer == "Dragon" {
+                Image(systemName: "hand.thumbsup.fill")
+            } else {
+                Image(systemName: "hand.thumbsdown.fill")
+            }
+            
+            Spacer()
+            
             TextField("Enter your answer", text: $enteredAnswer)
                 .padding()
         }
