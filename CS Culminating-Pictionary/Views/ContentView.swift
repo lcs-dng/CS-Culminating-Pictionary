@@ -12,6 +12,8 @@ struct ContentView: View {
     // MARK: Stored properties
     @State var enteredAnswer = ""
     
+    @State var feedback = ""
+    
     // MARK: Computed properties
     var body: some View {
         VStack {
@@ -29,19 +31,34 @@ struct ContentView: View {
                 .scaledToFit()
                 .border(.black)
                 .padding()
-            
-            if enteredAnswer == "Dragon" {
-                Image(systemName: "hand.thumbsup.fill")
-            } else {
-                Image(systemName: "hand.thumbsdown.fill")
-            }
+                                    
+            Text(feedback)
+                .foregroundColor(feedback == "Correct!" ? .green : .red)
             
             Spacer()
             
-            TextField("Enter your answer", text: $enteredAnswer)
-                .padding()
+            HStack {
+                TextField("Enter your answer", text: $enteredAnswer)
+                
+                Button {
+                    // Compare the answer to the correct answer
+                    submitAnswer()
+                } label: {
+                    Text("Submit")
+                }
+            }
+            .padding()
         }
     }
+    
+    func submitAnswer() {
+        if enteredAnswer == "Dragon" {
+            feedback = "Correct!"
+        } else {
+            feedback = "Try again."
+        }
+    }
+    
 }
 
 #Preview {
