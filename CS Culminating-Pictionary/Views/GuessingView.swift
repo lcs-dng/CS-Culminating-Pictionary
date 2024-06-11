@@ -41,6 +41,21 @@ struct GuessingView: View {
             Text(feedback)
                 .foregroundColor(feedback == "Correct!" ? .green : .red)
             
+            Button {
+                nextQuestion()
+            } label: {
+                ZStack {
+                    Rectangle()
+                        .frame(width: 50, height: 30)
+                        .foregroundColor(.black)
+                        .cornerRadius(24)
+                    
+                    Text("Next")
+                        .accentColor(.orange)
+                        .bold()
+                }
+            }
+            
             Spacer()
             
             HStack {
