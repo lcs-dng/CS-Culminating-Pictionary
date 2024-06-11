@@ -7,11 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GuessingView: View {
     
     // MARK: Stored properties
+    
+    // Keep track of what picture is being guessed at
+    @State var currentPicture = 0
+    
+    // What is their guess
     @State var enteredAnswer = ""
     
+    // Are they correct?
     @State var feedback = ""
     
     // MARK: Computed properties
@@ -26,7 +32,7 @@ struct ContentView: View {
             
             Spacer()
             
-            Image("abstractDragon")
+            Image(possiblePictures[currentPicture].name)
                 .resizable()
                 .scaledToFit()
                 .border(.black)
@@ -51,16 +57,21 @@ struct ContentView: View {
         }
     }
     
+    
     func submitAnswer() {
-        if enteredAnswer == "Dragon" {
+        if enteredAnswer == possiblePictures[currentPicture].description {
             feedback = "Correct!"
         } else {
             feedback = "Try again."
         }
     }
     
+    func nextQuestion() {
+        currentPicture += 1
+    }
+    
 }
 
 #Preview {
-    ContentView()
+    GuessingView()
 }

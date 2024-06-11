@@ -46,7 +46,7 @@ struct LandingView: View {
                 .padding()
                 
                 NavigationLink {
-                    ContentView()
+                    GuessingView()
                 } label: {
                     Label("Start", systemImage: "play.circle.fill")
                         .font(

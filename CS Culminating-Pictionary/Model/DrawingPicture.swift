@@ -13,4 +13,12 @@ struct DrawingPicture {
     var description: String
 }
 
-let firstDrawingPicture = DrawingPicture(name: "abstractDragon", description: "Dragon")
+let picture1 = DrawingPicture(name: "abstractDragon", description: "Dragon")
+let picture2 = DrawingPicture(name: "goldenGateBridge", description: "Golden Gate Bridge")
+let picture3 = DrawingPicture(name: "defenestration", description: "Defenestration")
+
+let possiblePictures = [
+    picture1,
+    picture2,
+    picture3,
+]
