@@ -43,6 +43,8 @@ struct GuessingView: View {
             
             Button {
                 nextQuestion()
+                feedback = ""
+                enteredAnswer = ""
             } label: {
                 ZStack {
                     Rectangle()
