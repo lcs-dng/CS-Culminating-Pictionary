@@ -41,21 +41,25 @@ struct GuessingView: View {
             Text(feedback)
                 .foregroundColor(feedback == "Correct!" ? .green : .red)
             
-            Button {
-                nextQuestion()
-                feedback = ""
-                enteredAnswer = ""
-            } label: {
-                ZStack {
-                    Rectangle()
-                        .frame(width: 50, height: 30)
-                        .foregroundColor(.black)
-                        .cornerRadius(24)
-                    
-                    Text("Next")
-                        .accentColor(.orange)
-                        .bold()
+            if currentPicture < possiblePictures.count - 1 {
+                
+                Button {
+                    nextQuestion()
+                    feedback = ""
+                    enteredAnswer = ""
+                } label: {
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 50, height: 30)
+                            .foregroundColor(.black)
+                            .cornerRadius(24)
+                        
+                        Text("Next")
+                            .accentColor(.orange)
+                            .bold()
+                    }
                 }
+                
             }
             
             Spacer()
